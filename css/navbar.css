@@ -1,0 +1,20 @@
+.navbar {
+  background-color: #ffbfbf;
+}
+
+.nav-logo {
+  width: 60px;
+}
+
+.nav-item .active a{
+  color: #000;
+  font-weight: 600;
+}
+
+.nav-item a{
+  color: #313131;
+}
+
+.nav-item a:hover{
+  font-weight: 600;
+}
