@@ -1,6 +1,6 @@
 .btn-primary {
-  background-color: #ffbfbf;
-  border: 2px solid #ffbfbf;
+  background-color: #f7d0cb;
+  border: 2px solid #f7d0cb;
   color: #313131;
 }
 
@@ -8,6 +8,12 @@
   background-color: #e3e4e6;
   border: 2px solid #e3e4e6;
   color: #313131;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #e3e4e6 !important;
+  border: 2px solid #e3e4e6 !important;
+  color: #313131 !important;
 }
 
 .btn {

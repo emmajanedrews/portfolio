@@ -1,0 +1,80 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding-top: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/img/background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-logo {
+	max-width: 20rem;
+	display: block;
+	padding-top: 4rem;
+	margin-left: 20rem;
+}
+
+.site-title {
+	font-size: 36px;
+	font-family: 'Playfair Display', serif;
+	margin-left: 9rem;
+	font-weight: 900;
+}
+
+@media only screen and (max-width: 1200px) {
+	.home-logo {
+		margin-left: 17rem;
+		max-width: 18rem;
+		padding-top: 4rem;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.home-logo {
+		margin-left: 14rem;
+		max-width: 14rem;
+		padding-top: 4rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.home-logo {
+		margin-left: 11rem;
+		max-width: 11rem;
+		padding-top: 4rem;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.home-logo {
+		margin-left: 8rem;
+		max-width: 11rem;
+		padding-top: 4rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.home-logo {
+		margin-left: 5rem;
+		max-width: 11rem;
+		padding-top: 4rem;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.home-logo {
+		margin-left: 3rem;
+		max-width: 9rem;
+		padding-top: 4rem;
+	}
+}

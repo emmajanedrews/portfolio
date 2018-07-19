@@ -1,5 +1,6 @@
 .navbar {
-  background-color: #ffbfbf;
+  background-color: #f7d0cb;
+  position: fixed;
 }
 
 .nav-logo {
