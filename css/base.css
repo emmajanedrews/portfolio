@@ -1,16 +1,5 @@
-/* //colors
-$pink: #f7d0cb;
-$dark-pink: #fb9fa4;
-$light-gray: #e3e4e6;
-$gray: #313131;
-
-
-//fonts
-$bodyfont: 'Source Sans Pro', helvetica, arial, sans-serif;
-$headerfont: 'Playfair Display', serif; */
-
 body {
-  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #313131;
 }
 
