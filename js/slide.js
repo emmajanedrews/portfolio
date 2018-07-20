@@ -1,42 +1,41 @@
-// Activate Carousel
-$("#myCarousel").carousel();
+jQuery(document).ready(function ($) {
 
-// Enable Carousel Indicators
-$(".item1").click(function(){
-    $("#myCarousel").carousel(0);
-});
-$(".item2").click(function(){
-    $("#myCarousel").carousel(1);
-});
-$(".item3").click(function(){
-    $("#myCarousel").carousel(2);
-});
-$(".item4").click(function(){
-    $("#myCarousel").carousel(3);
-});
-$(".item5").click(function(){
-    $("#myCarousel").carousel(4);
-});
-$(".item6").click(function(){
-    $("#myCarousel").carousel(5);
-});
-$(".item7").click(function(){
-    $("#myCarousel").carousel(6);
-});
-$(".item8").click(function(){
-    $("#myCarousel").carousel(7);
-});
-$(".item9").click(function(){
-    $("#myCarousel").carousel(8);
-});
-$(".item10").click(function(){
-    $("#myCarousel").carousel(9);
-});
 
-// Enable Carousel Controls
-$(".left").click(function(){
-    $("#myCarousel").carousel("prev");
-});
-$(".right").click(function(){
-    $("#myCarousel").carousel("next");
-});
+	var slideCount = $('#slider ul li').length;
+	var slideWidth = $('#slider ul li').width();
+	var slideHeight = $('#slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+
+	$('#slider').css({ width: slideWidth, height: slideHeight });
+
+	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+    $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});    
