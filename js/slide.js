@@ -14,6 +14,24 @@ $(".item3").click(function(){
 $(".item4").click(function(){
     $("#myCarousel").carousel(3);
 });
+$(".item5").click(function(){
+    $("#myCarousel").carousel(4);
+});
+$(".item6").click(function(){
+    $("#myCarousel").carousel(5);
+});
+$(".item7").click(function(){
+    $("#myCarousel").carousel(6);
+});
+$(".item8").click(function(){
+    $("#myCarousel").carousel(7);
+});
+$(".item9").click(function(){
+    $("#myCarousel").carousel(8);
+});
+$(".item10").click(function(){
+    $("#myCarousel").carousel(9);
+});
 
 // Enable Carousel Controls
 $(".left").click(function(){
@@ -21,5 +39,4 @@ $(".left").click(function(){
 });
 $(".right").click(function(){
     $("#myCarousel").carousel("next");
-});
 });
