@@ -110,6 +110,18 @@ ul.home-nav {
 	}
 }
 
+/* iphone 8 */
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2){
+
+}
+
+	/* iphone 8plus */
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3){
+
+}
+
 @media only screen and (max-width: 320px) {
 	.home-logo {
 		margin-left: 3rem;
